@@ -1,18 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.statkeeper.MainActivity">
+    android:layout_height="match_parent">
+
+    <!--Purple team styles -->
 
     <TextView
+        android:id="@+id/purple_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Purple Team"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/purple_score_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purple_team"
+        android:textSize="56sp"
+        android:text="0"
+        android:gravity="center"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:text="touch down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="touch down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="125dp"
+        android:text="touch down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="125dp"
+        android:text="touch down"/>
+
+    <!-- Center line here -->
+
+    <View
+        android:id="@+id/center_line_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_blue_bright"/>
+
+    <View
+        android:id="@+id/center_line_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="reset"/>
+
+    <!-- Orange team styles -->
+
+    <TextView
+        android:id="@+id/orange_score_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/orange_team"
+        android:layout_alignParentBottom="false"
+        android:gravity="center"
+        android:textSize="56sp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/orange_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Orange Team" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_line_horizontal"
+        android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="75dp"
+        android:text="touch down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_line_horizontal"
+        android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="155dp"
+        android:text="touch down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_line_horizontal"
+        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="155dp"
+        android:text="touch down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_line_horizontal"
+        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="50dp"
+        android:text="touch down"/>
+
 </RelativeLayout>
