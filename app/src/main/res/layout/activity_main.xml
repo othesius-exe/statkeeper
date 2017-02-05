@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/field_color">
 
     <!--Purple team styles -->
 
@@ -11,9 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Purple Team"
+        android:text="@string/purple_team"
         android:textStyle="bold"
         android:textSize="25sp"
+        android:textColor="@color/purple_button"
         android:layout_margin="5dp"/>
 
     <TextView
@@ -22,40 +23,73 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/purple_team"
         android:textSize="56sp"
-        android:text="0"
+        android:text="@string/purple_score"
+        android:textColor="@color/purple_score"
         android:gravity="center"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_toLeftOf="@+id/center_line_vertical"
+        android:layout_toStartOf="@+id/center_line_vertical"
+        android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="50dp"
-        android:text="touch down"/>
+        android:background="@color/purple_button"
+        android:textColor="@color/purple_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/purple_touch"
+        android:onClick="touchDownPurple"
+        android:textSize="16sp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_toRightOf="@+id/center_line_vertical"
+        android:layout_toEndOf="@+id/center_line_vertical"
+        android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:text="touch down"/>
+        android:background="@color/purple_button"
+        android:textColor="@color/purple_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/purple_conversion"
+        android:onClick="conversionPurple"
+        android:textSize="16sp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_toLeftOf="@+id/center_line_vertical"
+        android:layout_toStartOf="@+id/center_line_vertical"
+        android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="125dp"
-        android:text="touch down"/>
+        android:background="@color/purple_button"
+        android:textColor="@color/purple_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/purple_extra"
+        android:onClick="extraPointPurple"
+        android:textSize="16sp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_toRightOf="@+id/center_line_vertical"
+        android:layout_toEndOf="@+id/center_line_vertical"
+        android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="125dp"
-        android:text="touch down"/>
+        android:background="@color/purple_button"
+        android:textColor="@color/purple_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/purple_field"
+        android:onClick="fieldGoalPurple"
+        android:textSize="16sp" />
 
     <!-- Center line here -->
 
@@ -68,15 +102,20 @@
 
     <View
         android:id="@+id/center_line_vertical"
-        android:layout_width="0dp"
+        android:layout_width="1dp"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
+        android:layout_centerHorizontal="true"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="reset"/>
+        android:text="@string/reset_button"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/reset_button"
+        android:textColor="@color/reset_text" />
 
     <!-- Orange team styles -->
 
@@ -85,11 +124,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_above="@id/orange_team"
-        android:layout_alignParentBottom="false"
+        android:layout_above="@+id/orange_team"
         android:gravity="center"
         android:textSize="56sp"
-        android:text="0" />
+        android:textColor="@color/orange_score"
+        android:text="@string/orange_score" />
 
     <TextView
         android:id="@+id/orange_team"
@@ -100,42 +139,74 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="25sp"
-        android:text="Orange Team" />
+        android:textColor="@color/orange_button"
+        android:text="@string/orange_team" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/center_line_horizontal"
         android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_toEndOf="@id/center_line_vertical"
         android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="75dp"
-        android:text="touch down"/>
+        android:background="@color/orange_button"
+        android:textColor="@color/orange_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/orange_field"
+        android:onClick="fieldGoalOrange"
+        android:textSize="16sp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/center_line_horizontal"
-        android:layout_toRightOf="@id/center_line_vertical"
+        android:layout_below="@+id/center_line_horizontal"
+        android:layout_toRightOf="@+id/center_line_vertical"
+        android:layout_toEndOf="@+id/center_line_vertical"
+        android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="155dp"
-        android:text="touch down"/>
+        android:background="@color/orange_button"
+        android:textColor="@color/orange_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/purple_conversion"
+        android:onClick="conversionOrange"
+        android:textSize="16sp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/center_line_horizontal"
-        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_toLeftOf="@+id/center_line_vertical"
+        android:layout_toStartOf="@+id/center_line_vertical"
+        android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="155dp"
-        android:text="touch down"/>
+        android:background="@color/orange_button"
+        android:textColor="@color/orange_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/orange_extra"
+        android:onClick="extraPointOrange"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/center_line_horizontal"
-        android:layout_toLeftOf="@id/center_line_vertical"
+        android:layout_below="@+id/center_line_horizontal"
+        android:layout_toLeftOf="@+id/center_line_vertical"
+        android:layout_toStartOf="@+id/center_line_vertical"
         android:layout_marginTop="75dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:text="touch down"/>
+        android:background="@color/orange_button"
+        android:textColor="@color/orange_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/orange_touch"
+        android:onClick="touchDownOrange"
+        android:textSize="16sp"/>
 
 </RelativeLayout>

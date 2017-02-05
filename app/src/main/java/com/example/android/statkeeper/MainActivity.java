@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         displayPurpleScore(purpleScore);
     }
 
-    public void fieldGoalPurple(View view) {
+    public void extraPointPurple(View view) {
         purpleScore += 1;
         displayPurpleScore(purpleScore);
     }
@@ -71,9 +71,16 @@ public class MainActivity extends AppCompatActivity {
         displayOrangeScore(orangeScore);
     }
 
-    public void fieldGoalOrange(View view) {
+    public void extraPointOrange(View view) {
         orangeScore += 1;
         displayOrangeScore(orangeScore);
+    }
+
+    public void resetScores(View view) {
+        orangeScore = 0;
+        purpleScore = 0;
+        displayOrangeScore(orangeScore);
+        displayPurpleScore(purpleScore);
     }
 
 

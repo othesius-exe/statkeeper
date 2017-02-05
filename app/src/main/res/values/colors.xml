@@ -4,10 +4,20 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <!-- purple colors here -->
+    <color name="title_color">#9C27B0</color>
+    <color name="field_color">#4CAF50</color>
 
+    <color name="reset_button">#F44336</color>
+    <color name="reset_text">#0D47A1</color>
+
+    <!-- purple colors here -->
+    <color name="purple_button">#673AB7</color>
+    <color name="purple_text">#E65100</color>
+    <color name="purple_score">#9575CD</color>
 
 
     <!-- orange colors here -->
-
+    <color name="orange_button">#FF9800</color>
+    <color name="orange_text">#311B92</color>
+    <color name="orange_score">#FFB74D</color>
 </resources>

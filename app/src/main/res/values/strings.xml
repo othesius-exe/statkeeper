@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">Stat Keeper</string>
 
-    <!-- Orange Text here -->
+    <string name="reset_button">Reset</string>
 
+    <!-- Orange Text here -->
+    <string name="orange_touch">Touch Down</string>
+    <string name="orange_field">Field Goal</string>
+    <string name="orange_conversion">Conversion</string>
+    <string name="orange_extra">Extra Pt</string>
+    <string name="orange_score">0</string>
+    <string name="orange_team">Orange Team</string>
 
 
     <!-- Purple Text here -->
+    <string name="purple_touch">Touch Down</string>
+    <string name="purple_field">Field Goal</string>
+    <string name="purple_conversion">Conversion</string>
+    <string name="purple_extra">Extra Pt</string>
+    <string name="purple_score">0</string>
+    <string name="purple_team">Purple Team</string>
 
 </resources>
