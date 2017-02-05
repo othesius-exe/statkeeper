@@ -8,8 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- For when I want to work on the custom Title
     <style name="WindowTitleBackground">
         <item name="android:background">@color/title_color</item>
-    </style>
+    </style> -->
 
 </resources>
